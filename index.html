@@ -282,7 +282,7 @@ body.modal-open { overflow: hidden; }
   <div class="welcome-text">
     <span class="announcement-icon">📢</span> 
     <div class="marquee-container">
-        <p class="marquee-content">⚠️ PROMO TERBATAS! Kuota Akrab XL/Axis Harga Termurah SE-Jawa. Cek Sekarang Sebelum Kehabisan! 🚀</p>
+        <p class="marquee-content">🚀 Transaksi lancar Juragan!! Satset sebelum Kehabisan Stok! Proses Cepat Dan Lancar Hanya di Petarukan Store 🚀</p>
     </div>
   </div>
   
@@ -293,7 +293,7 @@ body.modal-open { overflow: hidden; }
 <div class="content-spacer">
     
     <div class="admin-alert" id="adminNotification" style="display: none;">
-        <span>🔔 PEMBERITAHUAN ADMIN: Layanan XXL sedang mengalami gangguan di Area 4. Silahkan order paket L dulu. Terima kasih!</span>
+        <span>🔔 PEMBERITAHUAN ADMIN: Layanan Paket Akrab Ready Setiap Hari Juragan! SatSet Sebelum kehabisan Stok 💪 Terima kasih Yang Telah Order!</span>
         <button class="alert-close" onclick="dismissAlert()">×</button>
     </div>
     <div class="produk-grid" id="produkGrid"></div>
@@ -354,10 +354,10 @@ document.addEventListener('DOMContentLoaded', checkAlertStatus);
 // --- DATA PRODUK (Gambar Sudah Diganti dengan Link URL) ---
 const produkList = [
   {
-    nama: "Akrab L Basic",
-    kategori: "PAKET AKRAB L",
+    nama: "Akrab SuperMini",
+    kategori: "PAKET BULANAN",
     harga: 45000,
-    stok: 0,
+    stok: 1,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
     gambar: "https://placehold.co/300x140/0044FF/white/text=Akrab+L+Basic", 
     detail: `
@@ -384,10 +384,10 @@ const produkList = [
     `
   },
   {
-    nama: "Akrab L Biasa",
-    kategori: "PAKET AKRAB L",
-    harga: 62000,
-    stok: 0,
+    nama: "Akrab Mini",
+    kategori: "PAKET BULANAN",
+    harga: 58000,
+    stok: 2,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
     gambar: "https://placehold.co/300x140/0044FF/white/text=Akrab+L+Biasa",
     detail: `
@@ -414,9 +414,9 @@ const produkList = [
     `
   },
   {
-    nama: "Akrab Mega L",
-    kategori: "PAKET AKRAB L",
-    harga: 82000,
+    nama: "Akrab Big",
+    kategori: "PAKET BULANAN",
+    harga: 64000,
     stok: 0,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
     gambar: "https://placehold.co/300x140/0044FF/white/text=Akrab+Mega+L",
@@ -444,9 +444,9 @@ const produkList = [
     `
   },
   {
-    nama: "Akrab Super L",
-    kategori: "PAKET AKRAB L",
-    harga: 94000,
+    nama: "Akrab Jumbo V2",
+    kategori: "PAKET BULANAN",
+    harga: 73000,
     stok: 0,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
     gambar: "https://placehold.co/300x140/0044FF/white/text=Akrab+Super+L",
@@ -474,9 +474,9 @@ const produkList = [
     `
   },
   {
-    nama: "XXL MINI",
-    kategori: "PAKET AKRAB XXL",
-    harga: 67000,
+    nama: "JUMBO",
+    kategori: "PAKET BULANAN",
+    harga: 87000,
     stok: 0,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
     gambar: "https://placehold.co/300x140/FFD700/black/text=XXL+MINI",
@@ -503,9 +503,9 @@ const produkList = [
     `
   },
   {
-    nama: "XXL LITE",
-    kategori: "PAKET AKRAB XXL",
-    harga: 76000,
+    nama: "Mega Big",
+    kategori: "PAKET BULANAN",
+    harga: 94000,  
     stok: 0,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
     gambar: "https://placehold.co/300x140/FFD700/black/text=XXL+LITE",
@@ -530,256 +530,8 @@ const produkList = [
         <li>✓ Jika masih ada paket akrab aktif dari pengelola lain, wajib UNREG dahulu.</li>
       </ul>
     `
-  },
-  {
-    nama: "XXL JUMBO REWARD",
-    kategori: "PAKET AKRAB XXL",
-    harga: 83000,
-    stok: 0,
-    // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://placehold.co/300x140/FFD700/black/text=XXL+JUMBO+REWARD",
-    detail: `
-      <p>Paket XXL Jumbo Reward — kuota besar dan masa aktif 25-29 hari</p>
-      <p><strong>Detail Paket:</strong></p>
-      <ul>
-        <li>Area 1 = 65.5–67.5 GB</li>
-        <li>Area 2 = 70–72 GB</li>
-        <li>Area 3 = 83–85 GB</li>
-        <li>Area 4 = 123–125 GB</li>
-      </ul>
-      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
-      <p><strong>Keterangan:</strong></p>
-      <ul>
-        <li>✓ Paket ini Official Resmi Bergaransi</li>
-        <li>✓ Full Reguler</li>
-        <li>✓ Kuota Masuk ± 5 Menit Dari Pengelola</li>
-        <li>✓ Bonus Kuota My Rewards</li>
-        <li>✓ Reward tidak masuk, tunggu 1x24 jam sebelum komplain.</li>
-        <li>✓ Pastikan nomor sesuai — kesalahan nomor bukan tanggung jawab kami.</li>
-        <li>✓ Jika masih ada paket akrab aktif dari pengelola lain, wajib UNREG dahulu.</li>
-      </ul>
-    `
-  },
-  {
-    nama: "XXL JUMBO SUPER",
-    kategori: "PAKET AKRAB XXL",
-    harga: 88000,
-    stok: 0,
-    // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://placehold.co/300x140/FFD700/black/text=XXL+JUMBO+SUPER",
-    detail: `
-      <p>Paket XXL Jumbo Super — kuota super besar!</p>
-      <p><strong>Detail Paket:</strong></p>
-      <ul>
-        <li>Area 1 = 85.5–87.5 GB</li>
-        <li>Area 2 = 90–92 GB</li>
-        <li>Area 3 = 103–105 GB</li>
-        <li>Area 4 = 143–145 GB</li>
-      </ul>
-      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
-      <p><strong>Keterangan:</strong></p>
-      <ul>
-        <li>✓ Paket ini Official Resmi Bergaransi</li>
-        <li>✓ Full Reguler</li>
-        <li>✓ Kuota Masuk ± 5 Menit Dari Pengelola</li>
-        <li>✓ Bonus Kuota My Rewards</li>
-        <li>✓ Reward tidak masuk, tunggu 1x24 jam sebelum komplain.</li>
-        <li>✓ Pastikan nomor sesuai — kesalahan nomor bukan tanggung jawab kami.</li>
-        <li>✓ Jika masih ada paket akrab aktif dari pengelola lain, wajib UNREG dahulu.</li>
-      </ul>
-    `
-  },
-  {
-    nama: "Bekasan L 13 Hari",
-    kategori: "PAKET BEKASAN L",
-    harga: 18000,
-    stok: 0,
-    // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://placehold.co/300x140/E53935/white/text=Bekasan+L+13+Hari",
-    detail: `
-      <p>Paket ini Khusus XL & AXIS</p>
-      <p><strong>Detail Paket:</strong></p>
-      <ul>
-        <li>Area 1 = 8 GB</li>
-        <li>Area 2 = 10 GB</li>
-        <li>Area 3 = 15 GB</li>
-        <li>Area 4 = 25 GB</li>
-      </ul>
-      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
-      <p><strong>Keterangan:</strong></p>
-      <ul>
-        <li>✓ Paket bekasan resmi bergaransi</li>
-        <li>✓ Harga menyesuaikan sisa masa aktif</li>
-        <li>✓ Stok Paket Selalu Kami Update Setiap Hari</li>
-        <li>✓ Kuota Masuk ± 5 Menit Dari Pengelola</li> 
-        <li>✓ Pastikan nomor sesuai — kesalahan nomor bukan tanggung jawab kami</li>
-      </ul>
-    `
-  },
-  {
-    nama: "Bekasan L 12 Hari",
-    kategori: "PAKET BEKASAN L",
-    harga: 17000,
-    stok: 0,
-    // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://placehold.co/300x140/E53935/white/text=Bekasan+L+12+Hari",
-    detail: `
-      <p>Paket ini Khusus XL & AXIS</p>
-      <p><strong>Detail Paket:</strong></p>
-      <ul>
-        <li>Area 1 = 8 GB</li>
-        <li>Area 2 = 10 GB</li>
-        <li>Area 3 = 15 GB</li>
-        <li>Area 4 = 25 GB</li>
-      </ul>
-      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
-      <p><strong>Keterangan:</strong></p>
-      <ul>
-        <li>✓ Paket bekasan resmi bergaransi</li>
-        <li>✓ Harga menyesuaikan sisa masa aktif</li>
-        <li>✓ Stok Paket Selalu Kami Update Setiap Hari</li>
-        <li>✓ Kuota Masuk ± 5 Menit Dari Pengelola</li> 
-        <li>✓ Pastikan nomor sesuai — kesalahan nomor bukan tanggung jawab kami</li>
-        <li>✓ Jika masih ada paket akrab aktif dari pengelola lain, wajib UNREG dahulu.</li>
-      </ul>
-    `
-  },
-   {
-    nama: "Bekasan L 7 Hari",
-    kategori: "PAKET BEKASAN L",
-    harga: 12000,
-    stok: 0,
-    // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://placehold.co/300x140/E53935/white/text=Bekasan+L+7+Hari",
-    detail: `
-      <p>Paket ini Khusus XL & AXIS</p>
-      <p><strong>Detail Paket:</strong></p>
-      <ul>
-        <li>Area 1 = 8 GB</li>
-        <li>Area 2 = 10 GB</li>
-        <li>Area 3 = 15 GB</li>
-        <li>Area 4 = 25 GB</li>
-      </ul>
-      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
-      <p><strong>Keterangan:</strong></p>
-      <ul>
-        <li>✓ Paket bekasan resmi bergaransi</li>
-        <li>✓ Harga menyesuaikan sisa masa aktif</li>
-        <li>✓ Stok Paket Selalu Kami Update Setiap Hari</li>
-        <li>✓ Kuota Masuk ± 5 Menit Dari Pengelola</li> 
-        <li>✓ Pastikan nomor sesuai — kesalahan nomor bukan tanggung jawab kami</li>
-      </ul>
-    `
-  },
-  {
-    nama: "Bekasan XXL 5 Hari",
-    kategori: "PAKET BEKASAN XXL",
-    harga: 13000,
-    stok: 0,
-    // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://placehold.co/300x140/800080/white/text=Bekasan+XXL+5+Hari",
-    detail: `
-      <p>Paket ini Khusus XL & AXIS</p>
-      <p><strong>Detail Paket:</strong></p>
-      <ul>
-        <li>Area 1 = 7,5 GB</li>
-        <li>Area 2 = 12 GB</li>
-        <li>Area 3 = 25 GB</li>
-        <li>Area 4 = 65 GB</li>
-      </ul>
-      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
-      <p><strong>Keterangan:</strong></p>
-      <ul>
-        <li>✓ Paket bekasan resmi bergaransi</li>
-        <li>✓ Harga menyesuaikan sisa masa aktif</li>
-        <li>✓ Stok Paket Selalu Kami Update Setiap Hari</li>
-        <li>✓ Kuota Masuk ± 5 Menit Dari Pengelola</li> 
-        <li>✓ Pastikan nomor sesuai — kesalahan nomor bukan tanggung jawab kami</li>
-      </ul>
-    `
-  },
-   {
-    nama: "Bekasan XXL 6 Hari",
-    kategori: "PAKET BEKASAN XXL",
-    harga: 14000,
-    stok: 0,
-    // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://placehold.co/300x140/800080/white/text=Bekasan+XXL+6+Hari",
-    detail: `
-      <p>Paket ini Khusus XL & AXIS</p>
-      <p><strong>Detail Paket:</strong></p>
-      <ul>
-        <li>Area 1 = 7,5 GB</li>
-        <li>Area 2 = 12 GB</li>
-        <li>Area 3 = 25 GB</li>
-        <li>Area 4 = 65 GB</li>
-      </ul>
-      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
-      <p><strong>Keterangan:</strong></p>
-      <ul>
-        <li>✓ Paket bekasan resmi bergaransi</li>
-        <li>✓ Harga menyesuaikan sisa masa aktif</li>
-        <li>✓ Stok Paket Selalu Kami Update Setiap Hari</li>
-        <li>✓ Kuota Masuk ± 5 Menit Dari Pengelola</li> 
-        <li>✓ Pastikan nomor sesuai — kesalahan nomor bukan tanggung jawab kami</li>
-      </ul>
-    `
-  },
-   {
-    nama: "Bekasan XXL 8 Hari",
-    kategori: "PAKET BEKASAN XXL",
-    harga: 17000,
-    stok: 0,
-    // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://placehold.co/300x140/800080/white/text=Bekasan+XXL+8+Hari",
-    detail: `
-      <p>Paket ini Khusus XL & AXIS</p>
-      <p><strong>Detail Paket:</strong></p>
-      <ul>
-        <li>Area 1 = 7,5 GB</li>
-        <li>Area 2 = 12 GB</li>
-        <li>Area 3 = 25 GB</li>
-        <li>Area 4 = 65 GB</li>
-      </ul>
-      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
-      <p><strong>Keterangan:</strong></p>
-      <ul>
-        <li>✓ Paket bekasan resmi bergaransi</li>
-        <li>✓ Harga menyesuaikan sisa masa aktif</li>
-        <li>✓ Stok Paket Selalu Kami Update Setiap Hari</li>
-        <li>✓ Kuota Masuk ± 5 Menit Dari Pengelola</li> 
-        <li>✓ Pastikan nomor sesuai — kesalahan nomor bukan tanggung jawab kami</li>
-      </ul>
-    `
-  },
-   {
-    nama: "Bekasan XXL 13 Hari",
-    kategori: "PAKET BEKASAN XXL",
-    harga: 23000,
-    stok: 0,
-    // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://placehold.co/300x140/800080/white/text=Bekasan+XXL+13+Hari",
-    detail: `
-      <p>Paket ini Khusus XL & AXIS</p>
-      <p><strong>Detail Paket:</strong></p>
-      <ul>
-        <li>Area 1 = 7,5 GB</li>
-        <li>Area 2 = 12 GB</li>
-        <li>Area 3 = 25 GB</li>
-        <li>Area 4 = 65 GB</li>
-      </ul>
-      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
-      <p><strong>Keterangan:</strong></p>
-      <ul>
-        <li>✓ Paket bekasan resmi bergaransi</li>
-        <li>✓ Harga menyesuaikan sisa masa aktif</li>
-        <li>✓ Stok Paket Selalu Kami Update Setiap Hari</li>
-        <li>✓ Kuota Masuk ± 5 Menit Dari Pengelola</li> 
-        <li>✓ Pastikan nomor sesuai — kesalahan nomor bukan tanggung jawab kami</li>
-      </ul>
-    `
   }
-];
+ ],   
 
 const produkGrid = document.getElementById("produkGrid");
 
