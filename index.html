@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Petarukan Store || Cendrawasih</title>
+<title>Petarukan Store || Digital Online</title>
 <style>
 /* --- PERBAIKAN ANTI-PERGESERAN LAYAR (FINAL) --- */
 html {
@@ -282,7 +282,7 @@ body.modal-open { overflow: hidden; }
   <div class="welcome-text">
     <span class="announcement-icon">📢</span> 
     <div class="marquee-container">
-        <p class="marquee-content">🚀 Transaksi lancar Juragan!! Satset sebelum Kehabisan Stok! Proses Cepat Dan Lancar Hanya di Petarukan Store 🚀</p>
+        <p class="marquee-content">⚠️ PROMO TERBATAS! Kuota Akrab XL/Axis Harga Termurah SE-Jawa. Cek Sekarang Sebelum Kehabisan! 🚀</p>
     </div>
   </div>
   
@@ -293,7 +293,7 @@ body.modal-open { overflow: hidden; }
 <div class="content-spacer">
     
     <div class="admin-alert" id="adminNotification" style="display: none;">
-        <span>🔔 PEMBERITAHUAN ADMIN: Layanan Paket Akrab Ready Setiap Hari Juragan! SatSet Sebelum kehabisan Stok 💪 Terima kasih Yang Telah Order!</span>
+        <span>🔔 PEMBERITAHUAN ADMIN: Layanan XXL sedang mengalami gangguan di Area 4. Silahkan order paket L dulu. Terima kasih!</span>
         <button class="alert-close" onclick="dismissAlert()">×</button>
     </div>
     <div class="produk-grid" id="produkGrid"></div>
@@ -387,7 +387,7 @@ const produkList = [
     nama: "Akrab Mini",
     kategori: "PAKET BULANAN",
     harga: 58000,
-    stok: 2,
+    stok: 1,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
     gambar: "https://placehold.co/300x140/0044FF/white/text=Akrab+L+Biasa",
     detail: `
@@ -414,7 +414,7 @@ const produkList = [
     `
   },
   {
-    nama: "Akrab Big",
+    nama: "Akrab BIG",
     kategori: "PAKET BULANAN",
     harga: 64000,
     stok: 0,
@@ -446,7 +446,7 @@ const produkList = [
   {
     nama: "Akrab Jumbo V2",
     kategori: "PAKET BULANAN",
-    harga: 73000,
+    harga: 74000,
     stok: 0,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
     gambar: "https://placehold.co/300x140/0044FF/white/text=Akrab+Super+L",
@@ -503,9 +503,9 @@ const produkList = [
     `
   },
   {
-    nama: "Mega Big",
+    nama: "Mega BIG",
     kategori: "PAKET BULANAN",
-    harga: 94000,  
+    harga: 94000,
     stok: 0,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
     gambar: "https://placehold.co/300x140/FFD700/black/text=XXL+LITE",
@@ -531,6 +531,7 @@ const produkList = [
       </ul>
     `
   },
+];
 
 const produkGrid = document.getElementById("produkGrid");
 
