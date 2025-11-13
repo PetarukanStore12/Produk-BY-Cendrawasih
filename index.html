@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Petarukan Store || Digital Online</title>
+<title>Petarukan Store || Cendrawasih</title>
 <style>
 /* --- PERBAIKAN ANTI-PERGESERAN LAYAR (FINAL) --- */
 html {
@@ -121,6 +121,32 @@ body.modal-open { overflow: hidden; }
     font-weight: normal;
 }
 
+/* --- ADMIN INFO ALERT BARU --- */
+.admin-alert {
+  margin: 10px 12px; /* Margin sama dengan padding grid */
+  padding: 10px 15px;
+  background-color: #fce4ec; /* Pink/Red Light */
+  color: #c2185b; /* Pink/Red Dark */
+  border: 1px solid #f8bbd0;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+.alert-close {
+  background: none;
+  border: none;
+  color: #c2185b;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: bold;
+}
+/* --- AKHIR ADMIN INFO ALERT --- */
+
 
 /* GRID PRODUK */
 .produk-grid {
@@ -184,7 +210,7 @@ body.modal-open { overflow: hidden; }
   justify-content: center;
   align-items: center;
   padding: 10px;
-  z-index: 10;
+  z-index: 1000; /* Dibuat lebih tinggi dari header (100) */
   opacity: 0;
   transition: opacity .25s ease;
 }
@@ -244,7 +270,7 @@ body.modal-open { overflow: hidden; }
 
 <div class="header">
   <div class="brand">
-    <div class="logo"><img src="https://via.placeholder.com/48x48?text=LOGO" alt="Logo"></div> 
+    <div class="logo"><img src="https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/giphy.gif" alt="Logo"></div> 
     <div class="store-info">
       <div class="store-name">PETARUKAN STORE</div>
       <div class="store-sub">Jl. Raya Petarukan Pemalang</div>
@@ -265,6 +291,11 @@ body.modal-open { overflow: hidden; }
 </div>
 
 <div class="content-spacer">
+    
+    <div class="admin-alert" id="adminNotification" style="display: none;">
+        <span>🔔 PEMBERITAHUAN ADMIN: Layanan XXL sedang mengalami gangguan di Area 4. Silahkan order paket L dulu. Terima kasih!</span>
+        <button class="alert-close" onclick="dismissAlert()">×</button>
+    </div>
     <div class="produk-grid" id="produkGrid"></div>
 </div>
 
@@ -298,6 +329,27 @@ function updateDateTime() {
 
 updateDateTime();
 setInterval(updateDateTime, 1000); 
+
+// --- FUNGSIONALITAS PEMBERITAHUAN ADMIN BARU ---
+function checkAlertStatus() {
+    const alert = document.getElementById('adminNotification');
+    // Cek apakah notifikasi pernah ditutup sebelumnya di browser ini
+    // Jika tidak ada di localStorage, maka tampilkan
+    if (localStorage.getItem('adminAlertDismissed') !== 'true') {
+        alert.style.display = 'flex';
+    }
+}
+
+function dismissAlert() {
+    const alert = document.getElementById('adminNotification');
+    alert.style.display = 'none';
+    // Simpan status bahwa notifikasi sudah ditutup (agar tidak muncul lagi)
+    localStorage.setItem('adminAlertDismissed', 'true');
+}
+
+// Panggil fungsi ini saat halaman dimuat
+document.addEventListener('DOMContentLoaded', checkAlertStatus);
+// --- AKHIR PEMBERITAHUAN ADMIN BARU ---
 
 // --- DATA PRODUK (Gambar Sudah Diganti dengan Link URL) ---
 const produkList = [
