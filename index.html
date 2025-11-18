@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Petarukan Store || Digital Online</title>
+<title>Petarukan Store || CENDRAWASIH</title>
 <style>
 /* --- PERBAIKAN ANTI-PERGESERAN LAYAR (FINAL) --- */
 html {
@@ -282,7 +282,7 @@ body.modal-open { overflow: hidden; }
   <div class="welcome-text">
     <span class="announcement-icon">📢</span> 
     <div class="marquee-container">
-        <p class="marquee-content">⚠️ PROMO TERBATAS! Kuota Akrab XL/Axis Harga Termurah SE-Jawa. Cek Sekarang Sebelum Kehabisan! 🚀</p>
+        <p class="marquee-content">🚀 Transaksi Lancar Juragan! Stok Setiap Hari Ready - Paket Akrab ini Stoknya Mudah Habis - jangan sampai Kehabisan! Kalau Mau Kebagian Stok Keep langsung Hubungi Admin Satset 💪</p>
     </div>
   </div>
   
@@ -293,7 +293,7 @@ body.modal-open { overflow: hidden; }
 <div class="content-spacer">
     
     <div class="admin-alert" id="adminNotification" style="display: none;">
-        <span>🔔 PEMBERITAHUAN ADMIN: Layanan XXL sedang mengalami gangguan di Area 4. Silahkan order paket L dulu. Terima kasih!</span>
+        <span>🔔 PEMBERITAHUAN ADMIN: Layanan Produk Akrab Ready Setiap Hari - Paket Akrab ini Stoknya Mudah habis Kalau mau Kebagian Stok Bisa Keep Hubungi Admin ya. Terima kasih!</span>
         <button class="alert-close" onclick="dismissAlert()">×</button>
     </div>
     <div class="produk-grid" id="produkGrid"></div>
@@ -354,20 +354,20 @@ document.addEventListener('DOMContentLoaded', checkAlertStatus);
 // --- DATA PRODUK (Gambar Sudah Diganti dengan Link URL) ---
 const produkList = [
   {
-    nama: "Akrab SuperMini",
-    kategori: "PAKET BULANAN",
+    nama: "SUPER MINI",
+    kategori: "PAKET AKRAB BULANAN - V5",
     harga: 45000,
     stok: 1,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/oranye-kuning-promosi-kios-pulsa-internet-yard-sign.gif", 
+    gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-supermini.png", 
     detail: `
-      <p>Paket ini Khusus XL & Axis</p>
+      <p>Paket SUPER MINI Untuk XL & Axis</p>
       <p><strong>Detail Paket:</strong></p>
       <ul>
-        <li>Area 1 = 15 GB</li>
-        <li>Area 2 = 17 GB</li>
-        <li>Area 3 = 22 GB</li>
-        <li>Area 4 = 32 GB</li>
+        <li>Area 1 = 13 - 15 GB</li>
+        <li>Area 2 = 15 - 17 GB</li>
+        <li>Area 3 = 20 - 22 GB</li>
+        <li>Area 4 = 30 - 32 GB</li>
       </ul>
       <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
       <p><strong>Keterangan:</strong></p>
@@ -384,20 +384,20 @@ const produkList = [
     `
   },
   {
-    nama: "Akrab Mini",
-    kategori: "PAKET BULANAN",
-    harga: 58000,
+    nama: "MINI",
+    kategori: "PAKET AKRAB BULANAN - V5",
+    harga: 56000,
     stok: 1,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/oranye-kuning-promosi-kios-pulsa-internet-yard-sign.gif",
+    gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/salinan-dari-happy-old-1.gif",
     detail: `
-      <p>Paket ini Khusus XL & Axis</p>
+      <p>Paket MINI Untuk XL & Axis</p>
       <p><strong>Detail Paket:</strong></p>
       <ul>
-        <li>Area 1 = 38–40 GB</li>
-        <li>Area 2 = 40–42 GB</li>
-        <li>Area 3 = 45–47 GB</li>
-        <li>Area 4 = 55–57 GB</li>
+        <li>Area 1 = 19 - 21 GB</li>
+        <li>Area 2 = 21 - 23 GB</li>
+        <li>Area 3 = 26 - 28 GB</li>
+        <li>Area 4 = 36 - 38 GB</li>
       </ul>
       <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
       <p><strong>Keterangan:</strong></p>
@@ -414,20 +414,20 @@ const produkList = [
     `
   },
   {
-    nama: "Akrab BIG",
-    kategori: "PAKET BULANAN",
-    harga: 64000,
-    stok: 0,
+    nama: "BIG",
+    kategori: "PAKET AKRAB BULANAN - V5",
+    harga: 62000,
+    stok: 1,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/oranye-kuning-promosi-kios-pulsa-internet-yard-sign.gif",
+    gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-big.png",
     detail: `
-      <p>Paket ini Khusus XL & Axis</p>
+      <p>Paket MINI Untuk XL & Axis</p>
       <p><strong>Detail Paket:</strong></p>
       <ul>
-        <li>Area 1 = 63–65 GB</li>
-        <li>Area 2 = 65–67 GB</li>
-        <li>Area 3 = 70–72 GB</li>
-        <li>Area 4 = 80–82 GB</li>
+        <li>Area 1 = 38 - 40 GB</li>
+        <li>Area 2 = 40 - 42 GB</li>
+        <li>Area 3 = 45 - 47 GB</li>
+        <li>Area 4 = 55 - 57 GB</li>
       </ul>
       <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
       <p><strong>Keterangan:</strong></p>
@@ -444,20 +444,20 @@ const produkList = [
     `
   },
   {
-    nama: "Akrab Jumbo V2",
-    kategori: "PAKET BULANAN",
-    harga: 74000,
-    stok: 0,
+    nama: "JUMBO V2",
+    kategori: "PAKET AKRAB BULANAN - V5",
+    harga: 72000,
+    stok: 1,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/oranye-kuning-promosi-kios-pulsa-internet-yard-sign.gif",
+    gambar: "",
     detail: `
-      <p>Paket ini bisa untuk XL & Axis</p>
+      <p>Paket BIG untuk XL & Axis</p>
       <p><strong>Detail Paket:</strong></p>
       <ul>
-        <li>Area 1 = 88–90 GB</li>
-        <li>Area 2 = 90–92 GB</li>
-        <li>Area 3 = 95–97 GB</li>
-        <li>Area 4 = 105–107 GB</li>
+        <li>Area 1 = 38 - 40 GB</li>
+        <li>Area 2 = 40 - 42 GB</li>
+        <li>Area 3 = 45 - 47 GB</li>
+        <li>Area 4 = 55 - 57 GB</li>
       </ul>
       <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
       <p><strong>Keterangan:</strong></p>
@@ -475,19 +475,19 @@ const produkList = [
   },
   {
     nama: "JUMBO",
-    kategori: "PAKET BULANAN",
-    harga: 87000,
-    stok: 0,
+    kategori: "PAKET AKRAB BULANAN - V5",
+    harga: 85000,
+    stok: 1,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/oranye-kuning-promosi-kios-pulsa-internet-yard-sign.gif",
+    gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-lite.png",
     detail: `
-      <p>Paket XXL MINI untuk XL & Axis</p>
+      <p>Paket LITE untuk XL & Axis</p>
       <p><strong>Detail Paket:</strong></p>
       <ul>
-        <li>Area 1 = 27 GB</li>
-        <li>Area 2 = 32 GB</li>
-        <li>Area 3 = 45 GB</li>
-        <li>Area 4 = 85 GB</li>
+        <li>Area 1 = 47 - 49 GB</li>
+        <li>Area 2 = 49 - 51 GB</li>
+        <li>Area 3 = 54 - 56 GB</li>
+        <li>Area 4 = 64 - 66 GB</li>
       </ul>
       <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
       <p><strong>Keterangan:</strong></p>
@@ -503,20 +503,20 @@ const produkList = [
     `
   },
   {
-    nama: "Mega BIG",
-    kategori: "PAKET BULANAN",
-    harga: 94000,
-    stok: 0,
+    nama: "MEGA BIG",
+    kategori: "PAKET AKRAB BULANAN - V5",
+    harga: 93000,
+    stok: 1,
     // GANTI DENGAN LINK GAMBAR ASLI ANDA
-    gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/oranye-kuning-promosi-kios-pulsa-internet-yard-sign.gif",
+    gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-jumbolite.png",
     detail: `
-      <p>Paket XXL LITE resmi untuk XL & Axis</p>
+      <p>Paket JUMBO LITE resmi untuk XL & Axis</p>
       <p><strong>Detail Paket:</strong></p>
       <ul>
-        <li>Area 1 = 47.5 GB</li>
-        <li>Area 2 = 52 GB</li>
-        <li>Area 3 = 60.5 GB</li>
-        <li>Area 4 = 105 GB</li>
+        <li>Area 1 = 50 - 52 GB</li>
+        <li>Area 2 = 52 - 54 GB</li>
+        <li>Area 3 = 57 - 59 GB</li>
+        <li>Area 4 = 67 - 69 GB</li>
       </ul>
       <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
       <p><strong>Keterangan:</strong></p>
@@ -531,6 +531,455 @@ const produkList = [
       </ul>
     `
   },
+  {
+  nama: "13 GB REGULER + LOKAL",
+  kategori: "PAKET AKRAB BACKUP - V5",
+  harga: 49000,
+  stok: 1,
+  // GANTI DENGAN LINK GAMBAR ASLI ANDA
+  gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-xtrabig.png",
+  detail: `
+      <p>Paket BACKUP untuk XL & Axis</p>
+      <p><strong>Detail Paket:</strong></p>
+      <ul>
+        <li>Area 1 = 105 - 107 GB</li>
+        <li>Area 2 = 110 - 112 GB</li>
+        <li>Area 3 = 123 - 125 GB</li>
+        <li>Area 4 = 163 - 165 GB</li>
+      </ul>
+      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Paket ini Official Resmi Bergaransi</li>
+         <li>13 GB REGULER + LOKAL adalah nama paket, yang terdiri dari dua jenis kuota dengan jangkauan penggunaan yang berbeda.</li>
+         <li>Kuota Lokal Adalah BONUS yang membuat Total kuota Anda menjadi 105 GB, 110 GB, 123 GB, Atau 163 GB (seperti yang tertera pada Area 1, Area 2, Area 3, & Area 4).</li>
+         <li>Kuota Lokal = Kuota Area 👉 ( Sesuaikan Sama Area Kalian )</li>
+       </ul>
+      <p><strong>Cara Kerjanya Gimana? </strong></p>
+      <ul>
+        <li>Jadi Semisal Kamu Sekarang Berada di Daerah Jateng - Lalu Pergi ke Daerah Jateng yg Sama Tapi Beda Kabupaten Biasanya Kuota LOKAL yg Terpakai Dulu.</li>
+        <li>Terus yg Kuota REGULER Ketika Kamu Berada di Asli Daerahmu Sendiri Maka Kuota Reguler.nya yg Terpakai - Tetapi Ketika Kuota Reguler Habis Maka Kuota Lokal Juga Mengikuti Sebagai Penggantinya Karena Paket REGULER + LOKAL Sama-sama Aktif</li>
+    `
+},
+  {
+  nama: "19 GB REGULER + LOKAL",
+  kategori: "PAKET AKRAB BACKUP - V5",
+  harga: 53000,
+  stok: 1,
+  // GANTI DENGAN LINK GAMBAR ASLI ANDA
+  gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-xtrabig.png",
+  detail: `
+      <p>Paket BACKUP untuk XL & Axis</p>
+      <p><strong>Detail Paket:</strong></p>
+      <ul>
+        <li>Area 1 = 105 - 107 GB</li>
+        <li>Area 2 = 110 - 112 GB</li>
+        <li>Area 3 = 123 - 125 GB</li>
+        <li>Area 4 = 163 - 165 GB</li>
+      </ul>
+      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Paket ini Official Resmi Bergaransi</li>
+         <li>19 GB REGULER + LOKAL adalah nama paket, yang terdiri dari dua jenis kuota dengan jangkauan penggunaan yang berbeda.</li>
+         <li>Kuota Lokal Adalah BONUS yang membuat Total kuota Anda menjadi 105 GB, 110 GB, 123 GB, Atau 163 GB (seperti yang tertera pada Area 1, Area 2, Area 3, & Area 4).</li>
+         <li>Kuota Lokal = Kuota Area 👉 ( Sesuaikan Sama Area Kalian )</li>
+       </ul>
+      <p><strong>Cara Kerjanya Gimana? </strong></p>
+      <ul>
+        <li>Jadi Semisal Kamu Sekarang Berada di Daerah Jateng - Lalu Pergi ke Daerah Jateng yg Sama Tapi Beda Kabupaten Biasanya Kuota LOKAL yg Terpakai Dulu.</li>
+        <li>Terus yg Kuota REGULER Ketika Kamu Berada di Asli Daerahmu Sendiri Maka Kuota Reguler.nya yg Terpakai - Tetapi Ketika Kuota Reguler Habis Maka Kuota Lokal Juga Mengikuti Sebagai Penggantinya Karena Paket REGULER + LOKAL Sama-sama Aktif</li>
+    `
+},
+  {
+  nama: "25 GB REGULER + LOKAL",
+  kategori: "PAKET AKRAB BACKUP - V5",
+  harga: 58000,
+  stok: 1,
+  // GANTI DENGAN LINK GAMBAR ASLI ANDA
+  gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-xtrabig.png",
+  detail: `
+      <p>Paket BACKUP untuk XL & Axis</p>
+      <p><strong>Detail Paket:</strong></p>
+      <ul>
+        <li>Area 1 = 105 - 107 GB</li>
+        <li>Area 2 = 110 - 112 GB</li>
+        <li>Area 3 = 123 - 125 GB</li>
+        <li>Area 4 = 163 - 165 GB</li>
+      </ul>
+      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Paket ini Official Resmi Bergaransi</li>
+         <li>25 GB REGULER + LOKAL adalah nama paket, yang terdiri dari dua jenis kuota dengan jangkauan penggunaan yang berbeda.</li>
+         <li>Kuota Lokal Adalah BONUS yang membuat Total kuota Anda menjadi 105 GB, 110 GB, 123 GB, Atau 163 GB (seperti yang tertera pada Area 1, Area 2, Area 3, & Area 4).</li>
+         <li>Kuota Lokal = Kuota Area 👉 ( Sesuaikan Sama Area Kalian )</li>
+       </ul>
+      <p><strong>Cara Kerjanya Gimana? </strong></p>
+      <ul>
+        <li>Jadi Semisal Kamu Sekarang Berada di Daerah Jateng - Lalu Pergi ke Daerah Jateng yg Sama Tapi Beda Kabupaten Biasanya Kuota LOKAL yg Terpakai Dulu.</li>
+        <li>Terus yg Kuota REGULER Ketika Kamu Berada di Asli Daerahmu Sendiri Maka Kuota Reguler.nya yg Terpakai - Tetapi Ketika Kuota Reguler Habis Maka Kuota Lokal Juga Mengikuti Sebagai Penggantinya Karena Paket REGULER + LOKAL Sama-sama Aktif</li>
+    `
+},
+  {
+  nama: "31 GB REGULER + LOKAL",
+  kategori: "PAKET AKRAB BACKUP - V5",
+  harga: 62000,
+  stok: 1,
+  // GANTI DENGAN LINK GAMBAR ASLI ANDA
+  gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-xtrabig.png",
+  detail: `
+      <p>Paket BACKUP untuk XL & Axis</p>
+      <p><strong>Detail Paket:</strong></p>
+      <ul>
+        <li>Area 1 = 105 - 107 GB</li>
+        <li>Area 2 = 110 - 112 GB</li>
+        <li>Area 3 = 123 - 125 GB</li>
+        <li>Area 4 = 163 - 165 GB</li>
+      </ul>
+      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Paket ini Official Resmi Bergaransi</li>
+         <li>31 GB REGULER + LOKAL adalah nama paket, yang terdiri dari dua jenis kuota dengan jangkauan penggunaan yang berbeda.</li>
+         <li>Kuota Lokal Adalah BONUS yang membuat Total kuota Anda menjadi 105 GB, 110 GB, 123 GB, Atau 163 GB (seperti yang tertera pada Area 1, Area 2, Area 3, & Area 4).</li>
+         <li>Kuota Lokal = Kuota Area 👉 ( Sesuaikan Sama Area Kalian )</li>
+       </ul>
+      <p><strong>Cara Kerjanya Gimana? </strong></p>
+      <ul>
+        <li>Jadi Semisal Kamu Sekarang Berada di Daerah Jateng - Lalu Pergi ke Daerah Jateng yg Sama Tapi Beda Kabupaten Biasanya Kuota LOKAL yg Terpakai Dulu.</li>
+        <li>Terus yg Kuota REGULER Ketika Kamu Berada di Asli Daerahmu Sendiri Maka Kuota Reguler.nya yg Terpakai - Tetapi Ketika Kuota Reguler Habis Maka Kuota Lokal Juga Mengikuti Sebagai Penggantinya Karena Paket REGULER + LOKAL Sama-sama Aktif</li>
+    `
+},
+  {
+  nama: "38 GB REGULER + LOKAL",
+  kategori: "PAKET AKRAB BACKUP - V5",
+  harga: 65000,
+  stok: 1,
+  // GANTI DENGAN LINK GAMBAR ASLI ANDA
+  gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-xtrabig.png",
+  detail: `
+      <p>Paket BACKUP untuk XL & Axis</p>
+      <p><strong>Detail Paket:</strong></p>
+      <ul>
+        <li>Area 1 = 105 - 107 GB</li>
+        <li>Area 2 = 110 - 112 GB</li>
+        <li>Area 3 = 123 - 125 GB</li>
+        <li>Area 4 = 163 - 165 GB</li>
+      </ul>
+      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Paket ini Official Resmi Bergaransi</li>
+         <li>38 GB REGULER + LOKAL adalah nama paket, yang terdiri dari dua jenis kuota dengan jangkauan penggunaan yang berbeda.</li>
+         <li>Kuota Lokal Adalah BONUS yang membuat Total kuota Anda menjadi 105 GB, 110 GB, 123 GB, Atau 163 GB (seperti yang tertera pada Area 1, Area 2, Area 3, & Area 4).</li>
+         <li>Kuota Lokal = Kuota Area 👉 ( Sesuaikan Sama Area Kalian )</li>
+       </ul>
+      <p><strong>Cara Kerjanya Gimana? </strong></p>
+      <ul>
+        <li>Jadi Semisal Kamu Sekarang Berada di Daerah Jateng - Lalu Pergi ke Daerah Jateng yg Sama Tapi Beda Kabupaten Biasanya Kuota LOKAL yg Terpakai Dulu.</li>
+        <li>Terus yg Kuota REGULER Ketika Kamu Berada di Asli Daerahmu Sendiri Maka Kuota Reguler.nya yg Terpakai - Tetapi Ketika Kuota Reguler Habis Maka Kuota Lokal Juga Mengikuti Sebagai Penggantinya Karena Paket REGULER + LOKAL Sama-sama Aktif</li>
+    `
+},
+  {
+  nama: "47 GB REGULER + LOKAL",
+  kategori: "PAKET AKRAB BACKUP - V5",
+  harga: 70000,
+  stok: 1,
+  // GANTI DENGAN LINK GAMBAR ASLI ANDA
+  gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-xtrabig.png",
+  detail: `
+      <p>Paket BACKUP untuk XL & Axis</p>
+      <p><strong>Detail Paket:</strong></p>
+      <ul>
+        <li>Area 1 = 105 - 107 GB</li>
+        <li>Area 2 = 110 - 112 GB</li>
+        <li>Area 3 = 123 - 125 GB</li>
+        <li>Area 4 = 163 - 165 GB</li>
+      </ul>
+      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Paket ini Official Resmi Bergaransi</li>
+         <li>47 GB REGULER + LOKAL adalah nama paket, yang terdiri dari dua jenis kuota dengan jangkauan penggunaan yang berbeda.</li>
+         <li>Kuota Lokal Adalah BONUS yang membuat Total kuota Anda menjadi 105 GB, 110 GB, 123 GB, Atau 163 GB (seperti yang tertera pada Area 1, Area 2, Area 3, & Area 4).</li>
+         <li>Kuota Lokal = Kuota Area 👉 ( Sesuaikan Sama Area Kalian )</li>
+       </ul>
+      <p><strong>Cara Kerjanya Gimana? </strong></p>
+      <ul>
+        <li>Jadi Semisal Kamu Sekarang Berada di Daerah Jateng - Lalu Pergi ke Daerah Jateng yg Sama Tapi Beda Kabupaten Biasanya Kuota LOKAL yg Terpakai Dulu.</li>
+        <li>Terus yg Kuota REGULER Ketika Kamu Berada di Asli Daerahmu Sendiri Maka Kuota Reguler.nya yg Terpakai - Tetapi Ketika Kuota Reguler Habis Maka Kuota Lokal Juga Mengikuti Sebagai Penggantinya Karena Paket REGULER + LOKAL Sama-sama Aktif</li>
+    `
+},
+{
+  nama: "55 GB REGULER + LOKAL",
+  kategori: "PAKET AKRAB BACKUP - V5",
+  harga: 76000,
+  stok: 1,
+  // GANTI DENGAN LINK GAMBAR ASLI ANDA
+  gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-xtrabig.png",
+  detail: `
+      <p>Paket BACKUP untuk XL & Axis</p>
+      <p><strong>Detail Paket:</strong></p>
+      <ul>
+        <li>Area 1 = 105 - 107 GB</li>
+        <li>Area 2 = 110 - 112 GB</li>
+        <li>Area 3 = 123 - 125 GB</li>
+        <li>Area 4 = 163 - 165 GB</li>
+      </ul>
+      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Paket ini Official Resmi Bergaransi</li>
+         <li>55 GB REGULER + LOKAL adalah nama paket, yang terdiri dari dua jenis kuota dengan jangkauan penggunaan yang berbeda.</li>
+         <li>Kuota Lokal Adalah BONUS yang membuat Total kuota Anda menjadi 105 GB, 110 GB, 123 GB, Atau 163 GB (seperti yang tertera pada Area 1, Area 2, Area 3, & Area 4).</li>
+         <li>Kuota Lokal = Kuota Area 👉 ( Sesuaikan Sama Area Kalian )</li>
+       </ul>
+      <p><strong>Cara Kerjanya Gimana? </strong></p>
+      <ul>
+        <li>Jadi Semisal Kamu Sekarang Berada di Daerah Jateng - Lalu Pergi ke Daerah Jateng yg Sama Tapi Beda Kabupaten Biasanya Kuota LOKAL yg Terpakai Dulu.</li>
+        <li>Terus yg Kuota REGULER Ketika Kamu Berada di Asli Daerahmu Sendiri Maka Kuota Reguler.nya yg Terpakai - Tetapi Ketika Kuota Reguler Habis Maka Kuota Lokal Juga Mengikuti Sebagai Penggantinya Karena Paket REGULER + LOKAL Sama-sama Aktif</li>
+    `
+},
+{
+  nama: "63 GB REGULER + LOKAL",
+  kategori: "PAKET AKRAB BACKUP - V5",
+  harga: 82000,
+  stok: 1,
+  // GANTI DENGAN LINK GAMBAR ASLI ANDA
+  gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-xtrabig.png",
+  detail: `
+      <p>Paket BACKUP untuk XL & Axis</p>
+      <p><strong>Detail Paket:</strong></p>
+      <ul>
+        <li>Area 1 = 105 - 107 GB</li>
+        <li>Area 2 = 110 - 112 GB</li>
+        <li>Area 3 = 123 - 125 GB</li>
+        <li>Area 4 = 163 - 165 GB</li>
+      </ul>
+      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Paket ini Official Resmi Bergaransi</li>
+         <li>63 GB REGULER + LOKAL adalah nama paket, yang terdiri dari dua jenis kuota dengan jangkauan penggunaan yang berbeda.</li>
+         <li>Kuota Lokal Adalah BONUS yang membuat Total kuota Anda menjadi 105 GB, 110 GB, 123 GB, Atau 163 GB (seperti yang tertera pada Area 1, Area 2, Area 3, & Area 4).</li>
+         <li>Kuota Lokal = Kuota Area 👉 ( Sesuaikan Sama Area Kalian )</li>
+       </ul>
+      <p><strong>Cara Kerjanya Gimana? </strong></p>
+      <ul>
+        <li>Jadi Semisal Kamu Sekarang Berada di Daerah Jateng - Lalu Pergi ke Daerah Jateng yg Sama Tapi Beda Kabupaten Biasanya Kuota LOKAL yg Terpakai Dulu.</li>
+        <li>Terus yg Kuota REGULER Ketika Kamu Berada di Asli Daerahmu Sendiri Maka Kuota Reguler.nya yg Terpakai - Tetapi Ketika Kuota Reguler Habis Maka Kuota Lokal Juga Mengikuti Sebagai Penggantinya Karena Paket REGULER + LOKAL Sama-sama Aktif</li>
+    `
+},
+{
+  nama: "88 GB REGULER + LOKAL",
+  kategori: "PAKET AKRAB BACKUP - V5",
+  harga: 98500,
+  stok: 1,
+  // GANTI DENGAN LINK GAMBAR ASLI ANDA
+  gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-xtrabig.png",
+  detail: `
+      <p>Paket BACKUP untuk XL & Axis</p>
+      <p><strong>Detail Paket:</strong></p>
+      <ul>
+        <li>Area 1 = 105 - 107 GB</li>
+        <li>Area 2 = 110 - 112 GB</li>
+        <li>Area 3 = 123 - 125 GB</li>
+        <li>Area 4 = 163 - 165 GB</li>
+      </ul>
+      <p>Silahkan cek area kalian di sini:<br><a href="https://cekarea-jade.vercel.app/" target="_blank">https://cekarea-jade.vercel.app/</a></p>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Paket ini Official Resmi Bergaransi</li>
+         <li>88 GB REGULER + LOKAL adalah nama paket, yang terdiri dari dua jenis kuota dengan jangkauan penggunaan yang berbeda.</li>
+         <li>Kuota Lokal Adalah BONUS yang membuat Total kuota Anda menjadi 105 GB, 110 GB, 123 GB, Atau 163 GB (seperti yang tertera pada Area 1, Area 2, Area 3, & Area 4).</li>
+         <li>Kuota Lokal = Kuota Area 👉( Sesuaikan Sama Area Kalian )</li>
+       </ul>
+      <p><strong>Cara Kerjanya Gimana? </strong></p>
+      <ul>
+        <li>Jadi Semisal Kamu Sekarang Berada di Daerah Jateng - Lalu Pergi ke Daerah Jateng yg Sama Tapi Beda Kabupaten Biasanya Kuota LOKAL yg Terpakai Dulu.</li>
+        <li>Terus yg Kuota REGULER Ketika Kamu Berada di Asli Daerahmu Sendiri Maka Kuota Reguler.nya yg Terpakai - Tetapi Ketika Kuota Reguler Habis Maka Kuota Lokal Juga Mengikuti Sebagai Penggantinya Karena Paket REGULER + LOKAL Sama-sama Aktif</li>
+    `
+  },
+  {
+  nama: "FLEX MAX 10 GB + BONUS X GB",
+  kategori: "PAKET - FLEX MAX",
+  harga: 37000,
+  stok: 1,
+  // GANTI DENGAN LINK GAMBAR ASLI ANDA
+  gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-flexmax-10gb.png",
+  detail: `
+      <p>Paket FLEXMAX untuk XL</p>
+      <p><strong>Detail Paket :</strong></p>
+      <ul>
+        <li>Bonus Kuota Utama 2 GB</li>
+        <li>Bonus Kuota TikTok 3 GB</li>
+        <li>Bonus Kuota YouTube 3 GB</li>
+        <li>Bonus Kuota Malam 4 GB</li>
+      </ul>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Kamu Bisa Ambil Bonus Salah Satu Saja di MY XL, Jangan Ambil Semua Bonus.</li>
+       </ul>
+    `
+  },
+   {
+   nama: "FLEX MAX 15 GB + BONUS X GB",
+   kategori: "PAKET - FLEX MAX",
+   harga: 41000,
+   stok: 1,
+   // GANTI DENGAN LINK GAMBAR ASLI ANDA
+   gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-flexmax-15gb.png",
+   detail: `
+      <p>Paket FLEXMAX untuk XL</p>
+      <p><strong>Detail Paket :</strong></p>
+      <ul>
+        <li>Bonus Kuota Utama 3 GB</li>
+        <li>Bonus Kuota TikTok 4.5 GB</li>
+        <li>Bonus Kuota YouTube 4.5 GB</li>
+        <li>Bonus Kuota Malam 6 GB</li>
+      </ul>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Kamu Bisa Ambil Bonus Salah Satu Saja di MY XL, Jangan Ambil Semua Bonus.</li>
+       </ul>
+    `
+ },
+  {
+   nama: "FLEX MAX 20 GB + BONUS X GB",
+   kategori: "PAKET - FLEX MAX",
+   harga: 50000,
+   stok: 1,
+   // GANTI DENGAN LINK GAMBAR ASLI ANDA
+   gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-flexmax-20gb.png",
+   detail: `
+      <p>Paket FLEXMAX untuk XL</p>
+      <p><strong>Detail Paket :</strong></p>
+      <ul>
+        <li>Bonus Kuota Utama 5 GB</li>
+        <li>Bonus Kuota TikTok 7.5 GB</li>
+        <li>Bonus Kuota YouTube 7.5 GB</li>
+        <li>Bonus Kuota Malam 10 GB</li>
+      </ul>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Kamu Bisa Ambil Bonus Salah Satu Saja di MY XL, Jangan Ambil Semua Bonus.</li>
+       </ul>
+    `
+ },
+  {
+   nama: "FLEX MAX 25 GB + BONUS X GB",
+   kategori: "PAKET - FLEX MAX",
+   harga: 58750,
+   stok: 1,
+   // GANTI DENGAN LINK GAMBAR ASLI ANDA
+   gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-flexmax-25gb.png",
+   detail: `
+      <p>Paket FLEXMAX untuk XL</p>
+      <p><strong>Detail Paket :</strong></p>
+      <ul>
+        <li>Bonus Kuota Utama 6 GB</li>
+        <li>Bonus Kuota TikTok 9 GB</li>
+        <li>Bonus Kuota YouTube 9 GB</li>
+        <li>Bonus Kuota Malam 12 GB</li>
+      </ul>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Kamu Bisa Ambil Bonus Salah Satu Saja di MY XL, Jangan Ambil Semua Bonus.</li>
+       </ul>
+    `
+ },
+  {
+   nama: "FLEX MAX 32 GB + BONUS X GB",
+   kategori: "PAKET - FLEX MAX",
+   harga: 72750,
+   stok: 1,
+   // GANTI DENGAN LINK GAMBAR ASLI ANDA
+   gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-flexmax-32gb.png",
+   detail: `
+      <p>Paket FLEXMAX untuk XL</p>
+      <p><strong>Detail Paket :</strong></p>
+      <ul>
+        <li>Bonus Kuota Utama 8 GB</li>
+        <li>Bonus Kuota TikTok 12 GB</li>
+        <li>Bonus Kuota YouTube 12 GB</li>
+        <li>Bonus Kuota Malam 16 GB</li>
+      </ul>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Kamu Bisa Ambil Bonus Salah Satu Saja di MY XL, Jangan Ambil Semua Bonus.</li>
+       </ul>
+    `
+ },
+  {
+   nama: "FLEX MAX 36 GB + BONUS X GB",
+   kategori: "PAKET - FLEX MAX",
+   harga: 77000,
+   stok: 1,
+   // GANTI DENGAN LINK GAMBAR ASLI ANDA
+   gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-flexmax-36gb.png",
+   detail: `
+      <p>Paket FLEXMAX untuk XL</p>
+      <p><strong>Detail Paket :</strong></p>
+      <ul>
+        <li>Bonus Kuota Utama 9 GB</li>
+        <li>Bonus Kuota TikTok 13.5 GB</li>
+        <li>Bonus Kuota YouTube 13.5 GB</li>
+        <li>Bonus Kuota Malam 18 GB</li>
+      </ul>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Kamu Bisa Ambil Bonus Salah Satu Saja di MY XL, Jangan Ambil Semua Bonus.</li>
+       </ul>
+    `
+ },
+  {
+   nama: "FLEX MAX 75 GB + BONUS X GB",
+   kategori: "PAKET - FLEX MAX",
+   harga: 93000,
+   stok: 1,
+   // GANTI DENGAN LINK GAMBAR ASLI ANDA
+   gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-flexmax-75gb.png",
+   detail: `
+      <p>Paket FLEXMAX untuk XL</p>
+      <p><strong>Detail Paket :</strong></p>
+      <ul>
+        <li>Area 1 = 75 GB Nasional</li>
+        <li>Area 2 = 75 GB Nasional + 6 GB Lokal</li>
+        <li>Area 3 = 75 GB Nasional + 9 GB Lokal</li>
+        <li>Area 4 = 75 GB Nasional + 15 GB Lokal</li>
+      </ul>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Bonus Kuota Utama 6 GB.</li>
+         <li>Bonus Kuota YouTube & TikTok 9 GB.</li>
+         <li>Bonus Kuota Malam 15 GB</li>
+         <li>Kamu Bisa Ambil Bonus Salah Satu Saja di MY XL, Jangan Ambil Semua Bonus.</li>
+       </ul>
+    `
+ },
+  {
+   nama: "FLEX MAX 48 GB + BONUS X GB",
+   kategori: "PAKET - FLEX MAX",
+   harga: 95000,
+   stok: 1,
+   // GANTI DENGAN LINK GAMBAR ASLI ANDA
+   gambar: "https://petarukanstoreimage.wordpress.com/wp-content/uploads/2025/11/produk-flexmax-48gb.png",
+   detail: `
+      <p>Paket FLEXMAX untuk XL</p>
+      <p><strong>Detail Paket :</strong></p>
+      <ul>
+        <li>Bonus Kuota Utama 12 GB</li>
+        <li>Bonus Kuota TikTok 18 GB</li>
+        <li>Bonus Kuota YouTube 18 GB</li>
+        <li>Bonus Kuota Malam 24 GB</li>
+      </ul>
+       <p><strong>Keterangan :</strong></p>
+       <ul>
+         <li>Kamu Bisa Ambil Bonus Salah Satu Saja di MY XL, Jangan Ambil Semua Bonus.</li>
+       </ul>
+    `
+ },
 ];
 
 const produkGrid = document.getElementById("produkGrid");
